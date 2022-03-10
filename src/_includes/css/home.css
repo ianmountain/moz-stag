@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/**
+ * BASE SIZE
+ * All calculations are based on this. It’s recommended that
+ * you keep it at 1rem because that is the root font size. You
+ * can set it to whatever you like and whatever unit you like.
+ */
+/**
+ * SIZE SCALE
+ * This is a Perfect Fourth scale that powers all the utilities that
+ * it is relevant for (font-size, margin, padding). All items are
+ * calcuated off the base size, so change that and cascade across
+ * your whole project.
+ */
+/**
+ * COLORS
+ * Colors are shared between backgrounds and text by default. 
+ * You can also use them to power borders, fills or shadows, for example.
+ */
+/**
+ * CORE CONFIG
+ * This powers everything from utility class generation to breakpoints
+ * to enabling/disabling pre-built components/utilities.
+ */
+.intro {
+  display: grid;
+  grid-template-rows: 2.36rem auto auto auto 2.36rem;
+  grid-gap: 1.33rem;
+}
+.intro > * {
+  grid-column: 1;
+}
+.intro__header {
+  position: relative;
+  padding: 0.75rem 1.33rem;
+  background: rgba(106, 194, 182, 0.75);
+  z-index: 2;
+  grid-row: 2/4;
+  margin: 0 1.33rem;
+  align-self: end;
+}
+.intro__header::before {
+  content: "";
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  background-color: rgba(255, 202, 119, 0.6);
+  z-index: -1;
+}
+@media (min-width: 37em) {
+  .intro__header::before {
+    top: -0.75rem;
+    left: -0.75rem;
+  }
+}
+.intro__heading {
+  z-index: 3;
+}
+.intro__heading em {
+  font-style: normal;
+  display: block;
+  font-weight: 900;
+  transform: translateX(-3px);
+}
+.intro__media {
+  grid-row: 1/3;
+  position: relative;
+}
+.intro__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.intro__content {
+  grid-row: 4;
+}
+.intro__content p {
+  max-width: 30ch;
+}
+@media (min-width: 37em) {
+  .intro {
+    grid-template-rows: 1.33rem auto auto auto 1.33rem;
+    grid-template-columns: minmax(15rem, 1fr) 1fr 1fr;
+  }
+  .intro__header {
+    padding: 1.33rem;
+    margin: 0;
+    grid-column: 1/3;
+    grid-row: 2;
+    justify-self: start;
+    align-self: end;
+  }
+  .intro__media {
+    grid-column: 4/2;
+    grid-row: 1/5;
+  }
+  .intro__content {
+    grid-row: 3/4;
+    grid-column: 1;
+  }
+}
+@media (min-width: 62em) {
+  .intro {
+    grid-template-columns: 1fr 1fr minmax(28rem, 1fr);
+  }
+  .intro__media {
+    height: 35rem;
+  }
+}
+
+.weekend__item {
+  padding: 1rem;
+}
+.weekend__day {
+  text-align: center;
+}
+.weekend__date {
+  text-align: center;
+  font-size: 10rem;
+}
+.weekend__month {
+  text-align: center;
+}
+.weekend__text {
+  margin-top: 1.33rem;
+  padding: 1.33rem 1rem;
+}
+
+.people .person__details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #f9f4e3;
+  background-color: #38445b;
+  padding: 0.75rem;
+}

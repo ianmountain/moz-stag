@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/**
+ * BASE SIZE
+ * All calculations are based on this. It’s recommended that
+ * you keep it at 1rem because that is the root font size. You
+ * can set it to whatever you like and whatever unit you like.
+ */
+/**
+ * SIZE SCALE
+ * This is a Perfect Fourth scale that powers all the utilities that
+ * it is relevant for (font-size, margin, padding). All items are
+ * calcuated off the base size, so change that and cascade across
+ * your whole project.
+ */
+/**
+ * COLORS
+ * Colors are shared between backgrounds and text by default. 
+ * You can also use them to power borders, fills or shadows, for example.
+ */
+/**
+ * CORE CONFIG
+ * This powers everything from utility class generation to breakpoints
+ * to enabling/disabling pre-built components/utilities.
+ */
+.trail-guide {
+  display: grid;
+  grid-gap: var(--auto-grid-gap, 5.6rem);
+  grid-template-columns: auto 1fr;
+}
+.trail-guide__station-link {
+  font-size: 2.36rem;
+  color: #263147;
+  text-decoration-color: #432e92;
+  font-family: Montserrat, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+}
+.trail-guide__station-link:hover {
+  color: #432e92;
+  text-decoration-color: #263147;
+}
+.trail-guide__map {
+  display: none;
+}
+@media (min-width: 37em) {
+  .trail-guide {
+    grid-template-columns: auto 1fr;
+  }
+  .trail-guide__map {
+    display: inline;
+  }
+}
+
+.commandments li + li {
+  margin-top: 1rem;
+}
+.commandments ol {
+  counter-reset: commandments;
+  list-style: none;
+  padding-left: 40px;
+}
+.commandments ol li {
+  counter-increment: commandments;
+  position: relative;
+}
+.commandments ol li::before {
+  content: counter(commandments);
+  color: #263147;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 36px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #6ac2b6;
+  border-radius: 50%;
+  text-align: center;
+}
