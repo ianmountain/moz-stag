@@ -76,9 +76,8 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': '"PT Serif", Georgia, serif',
-      'sans':
-        'Montserrat, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      'base': '"PT Serif", serif',
+      'sans': 'Montserrat, sans-serif',
     ),
     'output': 'standard',
     'property': 'font-family',

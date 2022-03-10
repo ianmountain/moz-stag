@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
-  "tsconfig": {
-    "module": "es6"
-  },
   "scripts": {
     "fontface": "glyphhanger --formats='woff2,woff' --subset='./fonts/*.ttf' --css",
     "prefonts": "mkdir -p dist/fonts",

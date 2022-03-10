@@ -11,3 +11,5 @@ Thumbs.db
 
 # Node modules and output
 node_modules
+dist
+src/_includes/css

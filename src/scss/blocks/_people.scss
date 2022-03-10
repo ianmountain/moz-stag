@@ -8,5 +8,10 @@
       background-color: get-color(dark);
       padding: get-size('300');
     }
+
+    // Pushes a sole "nickname" out to the right
+    &__details > .person__nickname {
+      margin-inline-start: auto;
+    }
   }
 }

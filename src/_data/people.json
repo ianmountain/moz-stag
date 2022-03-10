@@ -19,6 +19,12 @@
       "imageAlt": "A picture of Andrew"
     },
     {
+      "name": "Colin",
+      "nickname": "Sess",
+      "image": "./src/images/people/sess.png",
+      "imageAlt": "A picture of Colin"
+    },
+    {
       "name": "Ian",
       "nickname": "Mountsy",
       "image": "./src/images/people/ian.png",
@@ -29,6 +35,13 @@
       "image": "./src/images/people/jamie.png",
       "imageAlt": "A picture of Jamie"
     },
+    {
+      "name": "Jonny",
+      "nickname": "Woody",
+      "image": "./src/images/people/woody.png",
+      "imageAlt": "A picture of Jonny"
+    },
+
     {
       "name": "Kevin",
       "nickname": "Kev",
@@ -82,19 +95,6 @@
       "imageAlt": "A picture of Stephen"
     },
     {
-      "name": "TBC",
-      "nickname": "Sess",
-      "image": "./src/images/people/sess.png",
-      "imageAlt": "A picture of Sess"
-    },
-    {
-      "name": "TBC",
-      "nickname": "Woody",
-      "image": "./src/images/people/woody.png",
-      "imageAlt": "A picture of Woody"
-    },
-    {
-      "name": "TBC",
       "nickname": "Tiff",
       "image": "./src/images/people/tiff.png",
       "imageAlt": "A picture of Tiff"

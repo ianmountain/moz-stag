@@ -13,11 +13,13 @@
                         {% image item.image, item.imageAlt, sizes="25vw, 50vw, 100%" %}
                     </div>
                     <div class="[ person__details ] [ bg-dark ]">
+                        {% if item.name %}
                         <span class="[ person__name ] [ font-sans weight-bold ]">{{ item.name }}</span>
+                        {% endif %}
                         {% if item.nickname %}
                         <span
                             class="[ person__nickname ] [ font-sans color-quaternary-glare ]">'{{ item.nickname }}'</span>
-                        {%endif %}
+                        {% endif %}
                     </div>
                 </li>
                 {% endfor %}

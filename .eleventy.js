@@ -34,10 +34,10 @@ module.exports = (config) => {
     config.addTransform('htmlmin', htmlMinTransform);
   }
 
-  // Returns stations, sorted by display order
-  config.addCollection('stations', (collection) => {
+  // Returns aleTrail, sorted by display order
+  config.addCollection('aleTrail', (collection) => {
     return sortByDisplayOrder(
-      collection.getFilteredByGlob('./src/stations/*.md')
+      collection.getFilteredByGlob('./src/ale-trail/*.md')
     );
   });
 

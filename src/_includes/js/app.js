@@ -162,5 +162,3 @@ class BurgerMenu extends HTMLElement {
 if ('customElements' in window) {
   customElements.define('burger-menu', BurgerMenu);
 }
-
-exports.BurgerMenu = BurgerMenu;

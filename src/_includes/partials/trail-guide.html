@@ -2,7 +2,7 @@
     <div class="[ wrapper ]">
         <div class="trail-guide">
             <ol class="[ trail-guide__stations ] [ flow ]">
-                {% for item in collections.stations %}
+                {% for item in collections.aleTrail %}
                 <li class="[ trail-guide__station-item ] [ leading-tight measure-long ]">
                     <a href="{{ item.url }}" class="trail-guide__station-link">{{ item.data.displayOrder }}.
                         {{ item.data.title }}</a>

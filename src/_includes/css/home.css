@@ -137,3 +137,6 @@
   background-color: #38445b;
   padding: 0.75rem;
 }
+.people .person__details > .person__nickname {
+  margin-inline-start: auto;
+}
