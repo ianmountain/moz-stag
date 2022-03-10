@@ -1,0 +1,25 @@
+{
+  "dates": [
+    {
+      "day": "Friday",
+      "date": "8",
+      "ordinal": "th",
+      "month": "April",
+      "summary": "Gather in Manchester. Check in, catch up, try not to overdo it..."
+    },
+    {
+      "day": "Saturday",
+      "date": "9",
+      "ordinal": "th",
+      "month": "April",
+      "summary": "A lovely day out on the Ale Trail. Then on to Peaky Blinders."
+    },
+    {
+      "day": "Sunday",
+      "date": "10",
+      "ordinal": "th",
+      "month": "April",
+      "summary": "Painkillers, breakfast, hair of the dog, goodbyes, and home."
+    }
+  ]
+}

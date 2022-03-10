@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "About",
+      "url": "/moz/"
+    },
+    {
+      "text": "Ale Trail",
+      "url": "/ale-trail/"
+    },
+    {
+      "text": "Pssst",
+      "url": "/pssst/"
+    }
+  ]
+}

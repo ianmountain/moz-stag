@@ -1,0 +1,140 @@
+{
+  "sections": [
+    {
+      "gallery": [
+        {
+          "image": "./src/images/moz/moz-1.png",
+          "caption": "Mini Moz and Mini Kev Moz",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-2.png",
+          "caption": "Three siblings",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-3.png",
+          "caption": "Getting the band together",
+          "imageAlt": "A picture of Paul"
+        }
+      ],
+      "story": [
+        {
+          "text": "I have fond memories of being Paul Morrison's little sister, and it was a privilege to spend my formative years in an environment where I felt so nourished, valued and supported."
+        },
+        {
+          "text": "One of my earliest memories of living at Springfield's was when I was five years old and Paul came into my room after bed-time story, opened the curtains, pointed at the red lights of the Caldbeck masts, and informed me (in a rather doomed and apocalyptic tone of voice) that they were in fact aliens coming to get me. Funnily enough, I didn't sleep too well that night."
+        }
+      ]
+    },
+    {
+      "gallery": [
+        {
+          "image": "./src/images/moz/moz-4.png",
+          "caption": "Aye aye captain!",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-5.png",
+          "caption": "Photo shoot",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-6.png",
+          "caption": "Liiiverpool, Liiiverpool...",
+          "imageAlt": "A picture of Paul"
+        }
+      ],
+      "story": [
+        {
+          "text": "And then of course, there were the many times that Paul only permitted me to play Lego with him and Kev on the fundamental condition that I pretended that I wasn't actually there."
+        },
+        {
+          "text": "Now and again the pair of them would pause, ask each other if they could hear a third party breathing (at which point I would hold my breath, desperately holding it for as long as I possibly) until they eventually decided that no, all was well, there was just the two of them in the room, and Lego play could resume (meantime I would be lay on the floor, gasping, blue in the face, relieved that I had lived long enough to see another minifigure)."
+        }
+      ]
+    },
+    {
+      "gallery": [
+        {
+          "image": "./src/images/moz/moz-7.png",
+          "caption": "Winter on Springfields",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-8.png",
+          "caption": "Big hair Moz",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-9.png",
+          "caption": "Theatre club",
+          "imageAlt": "A picture of Paul"
+        }
+      ],
+      "story": [
+        {
+          "text": "When we were older, however, and we moved around the corner to Davaar, things changed. I was no-longer the invisible little sister, and I became much more active participant in sibling activities."
+        },
+        {
+          "text": "When Paul needed to practice his rugby high-tackle, I had the pleasure of standing at the top of corridor, shoulders hunched, eyes squeezed shut, while Paul gathered speed from the back of the kitchen and ran towards me, full welt."
+        },
+        {
+          "text": "When Mam's prized ornamental plate got knocked off its 7ft high hook on the wall, fell down the back of the radiator and smashed into tiny pieces, I was given the honorary role of telling Mam what had happened. I can still remember her face while I explained to her that whilst I was brushing my hair (in a rather extraordinary and dramatic manner, with arms like Inspector Gadget's) I had in fact accidently caused the damage, and that it was my fault, and my fault alone."
+        }
+      ]
+    },
+    {
+      "gallery": [
+        {
+          "image": "./src/images/moz/moz-10.png",
+          "caption": "At big school",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-11.png",
+          "caption": "Casual",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-12.png",
+          "caption": "A pint at the Club",
+          "imageAlt": "A picture of Paul"
+        }
+      ],
+      "story": [
+        {
+          "text": "You always did say that I had a good memory, Paul! And all that being said, rest assured my Big Bro, that I do remember all the good stuff too. Weekend trips to Dodd Wood, fishing in the beck down the Show Fields, caravan holidays in France. And, of course, there was the time you kindly sawed the plastic comb out of my hair with a bread knife when I'd got it stuck trying to curl my hair like Kylie's. And then in later years - walking home together after drunken nights out, playing the starling game with you and Boz at 2am in Carlisle City Centre, and BBQs in the back garden when you got back from Australia."
+        },
+        {
+          "text": "Then of course there were the tough times - the ones that brought us close. Sitting in your car listening to Brothers in Arms when it felt like all hell was breaking loose. Me, you and Kev forming the A-Team and sticking together like glue."
+        },
+        {
+          "text": "Yep, we've definitely been through a lot together, and it warms my heart to see you so happy now with Sam. You so deserve this next chapter in your life, Paul. Mam and Dad would be delighted for you. Enjoy every moment."
+        },
+        {
+          "text": "Your Little Sis, Lizzie."
+        }
+      ]
+    },
+    {
+      "gallery": [
+        {
+          "image": "./src/images/moz/moz-13.png",
+          "caption": "Dopey (on the right)",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-14.png",
+          "caption": "The family",
+          "imageAlt": "A picture of Paul"
+        },
+        {
+          "image": "./src/images/moz/moz-15.png",
+          "caption": "The A-Team",
+          "imageAlt": "A picture of Paul"
+        }
+      ]
+    }
+  ]
+}

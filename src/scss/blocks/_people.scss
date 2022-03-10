@@ -1,0 +1,12 @@
+.people {
+  .person {
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: get-color(light);
+      background-color: get-color(dark);
+      padding: get-size('300');
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.commandments {
+  li + li {
+    margin-top: 1rem;
+  }
+  ol {
+    counter-reset: commandments;
+    list-style: none;
+    padding-left: 40px;
+  }
+  ol li {
+    counter-increment: commandments;
+    position: relative;
+  }
+  ol li::before {
+    content: counter(commandments);
+    color: get-color(dark-shade);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 36px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    background: get-color(secondary);
+    border-radius: 50%;
+    text-align: center;
+  }
+}

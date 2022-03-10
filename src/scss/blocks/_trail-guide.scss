@@ -1,0 +1,30 @@
+.trail-guide {
+  display: grid;
+  grid-gap: var(--auto-grid-gap, get-size('major'));
+  grid-template-columns: auto 1fr;
+
+  &__station-link {
+    font-size: get-size('700');
+    color: get-color('dark-shade');
+    text-decoration-color: get-color('primary-shade');
+
+    @include apply-utility('font', 'sans');
+    @include apply-utility('weight', 'bold');
+
+    &:hover {
+      color: get-color('primary-shade');
+      text-decoration-color: get-color('dark-shade');
+    }
+  }
+
+  &__map {
+    display: none;
+  }
+
+  @include media-query('md') {
+    grid-template-columns: auto 1fr;
+    &__map {
+      display: inline;
+    }
+  }
+}

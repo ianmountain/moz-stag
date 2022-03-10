@@ -1,0 +1,29 @@
+<article class="[ stories ] [ panel ]">
+    <div class="[ wrapper ] [ flow ]">
+        <h2 class="[ stories__summary ] [ measure-short ]">
+            Where to begin......
+        </h2>
+        {% for item in moz.sections %}
+        <div class="[ stories__section ] [ flow ]">
+            <div class="[ stories__gallery ] [ auto-grid-m ]">
+                {% for item in item.gallery %}
+                <figure class="[ stories__gallery-image ]">
+                    {% image item.image, item.imageAlt, sizes="33vw, 50vw, 100%" %}
+                    <figcaption
+                        class="[ stories__gallery-caption ] [ font-sans weight-bold ] [ bg-dark color-light-glare ]">
+                        {{ item.caption }}
+                    </figcaption>
+                </figure>
+                {% endfor %}
+            </div>
+            {% if item.story %}
+            <div class="[ stories__text ] [ measure-long flow ]">
+                {% for item in item.story %}
+                <p>{{ item.text }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</article>

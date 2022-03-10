@@ -1,0 +1,27 @@
+.table {
+  display: grid;
+  &.col3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &.col4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &__header {
+    @include apply-utility('font', 'sans');
+    @include apply-utility('weight', 'bold');
+    font-size: get-size('400');
+  }
+
+  &__data {
+    background-color: get-color(light-glare);
+    margin: 2px;
+    padding: 5px;
+  }
+
+  @include media-query('md') {
+    &__header {
+      font-size: get-size('500');
+    }
+  }
+}

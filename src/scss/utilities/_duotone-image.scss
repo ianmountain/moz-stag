@@ -1,0 +1,54 @@
+/**
+ * DUOTONE CARD COMPONENT
+ * cannot be directly applied to a <picture> or <image> element.
+ * wrap the <picture> or <image> in a containing <div>
+ */
+.duotone {
+  --duotone-card-media-opacity: 1;
+  --duotone-card-media-brightness: 1.1;
+  --duotone-card-media-grayscale: 1;
+
+  &__image {
+    position: relative;
+    img {
+      filter: Grayscale(var(--duotone-card-media-grayscale))
+        Brightness(var(--duotone-card-media-brightness));
+      transition: filter var(--transition-snappy);
+    }
+  }
+}
+
+@supports (mix-blend-mode: multiply) {
+  .duotone__image::before,
+  .duotone__image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: var(--duotone-card-media-opacity);
+    transition: opacity var(--transition-snappy);
+  }
+
+  .duotone__image::before {
+    background: get-color(secondary-glare);
+    mix-blend-mode: multiply;
+  }
+
+  .duotone__image::after {
+    background: get-color(dark-shade);
+    mix-blend-mode: lighten;
+  }
+}
+
+/* Switch the custom property values on hover instead of writing
+       complex selectors */
+.duotone:hover,
+.duotone:focus-within {
+  --duotone-card-media-opacity: 0;
+  --duotone-card-media-brightness: 1;
+  --duotone-card-media-grayscale: 0;
+}

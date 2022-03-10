@@ -1,0 +1,14 @@
+<div class="[ panel ] [ bg-light-glare ]">
+    <div class="[ commandments ] [ wrapper flow ]">
+        <h2 class="headline" data-highlight="secondary">Remember the 10 Commandments</h2>
+        <p class="measure-long">These can more or less be summarised as drink responsibly and spare a thought for
+            residents living along the Real Ale Trail...</p>
+        <div class="[ commandments ] [ measure-short ]">
+            <ol>
+                {% for item in commandments.items %}
+                <li>{{ item.text }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>

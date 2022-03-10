@@ -1,0 +1,36 @@
+{% if title === 'The Transpennine Real Ale Trail' %}
+{% set title = 'Manchester' %}
+{% endif %}
+
+<div class="[ panel ]">
+    <div class="wrapper flow">
+        <h2 class="headline" data-highlight="secondary">Get to {{ destName }}</h2>
+        <div class="trains">
+            <div id="loading" class="[ trains__loading ] [ flow flow-space-300 ]">
+                <div>Fetching departure board data...</div>
+                <div class="loader"></div>
+            </div>
+            <div id="loaded" class="[ trains__loaded ] [ flow flow-space-600 ]">
+                <p class="measure-long">Live departure information for <strong>direct</strong> trains from {{ title }}
+                    to
+                    {{ destName }} is displayed here:
+                </p>
+                <div class="[ trains__content ] [ flow flow-space-500 ]">
+                    <div id="huxley" class="{{ thisCrs }} {{ destCrs }}">
+                        <div id="huxley__content">
+
+                        </div>
+                    </div>
+                    <button class="button" onclick="window.location.reload();">Refresh train times</button>
+                </div>
+                {% if (title === 'Manchester') or (destName === 'Manchester') %}
+                <p class="measure-long"><strong>Note:</strong> we only check <strong>direct</strong> trains
+                    {% if title === 'Manchester' %}from{% endif %}{% if destName === 'Manchester' %}to{% endif %}
+                    Manchester Victoria, Piccadilly and Oxford Road.</p>
+                <p class="measure-long"><a href="https://www.nationalrail.co.uk/" target="_blank">Alternative indirect
+                        services may be available.</a></p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

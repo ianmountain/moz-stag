@@ -1,0 +1,9 @@
+.trains {
+  &__loading {
+    display: block;
+  }
+
+  &__loaded {
+    display: none;
+  }
+}

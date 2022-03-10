@@ -1,0 +1,47 @@
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/station.css'] %}
+{% set pageScripts = ['js/huxley.js'] %}
+{% set previousStation = collections.stations | getPreviousCollectionItem(page) %}
+{% set nextStation = collections.stations | getNextCollectionItem(page) %}
+
+{% block content %}
+<article class="station-info">
+    <header class="hero">
+        <div class="[ hero__inner ] [ wrapper ]">
+            <div class="[ hero__content ] [ flow ] [ color-light flow-space-400 ]">
+                <h1 class="[ headline ] [ measure-compact ]" data-highlight="quinary">
+                    {{ title }}</h1>
+                <p class="measure-short">{{ summary }}</p>
+            </div>
+        </div>
+        {% image imageSrc, imageAlt, styles="hero__image", sizes="100%" %}
+    </header>
+    <div class="[ directions ] [ panel ] [ bg-light-glare ]">
+        <div class="wrapper flow">
+            {% if directions %}
+            <h2 class="headline" data-highlight="secondary">Find the pub</h2>
+            <p class="measure-long">{{ directions }}</p>
+            {% endif %}
+            {% if about %}
+            <h2 class="headline" data-highlight="secondary">About the pub</h2>
+            <p class="measure-long">{{ about }}</p>
+            {% endif %}
+            {% if website %}
+            <p class="measure-long">Have a look at the <a href="{{ website }}" target="_blank">{{ pub }}
+                    <strong>website</strong></a>.
+            </p>
+            {% endif %}
+            {% if facebook %}
+            <p class="measure-long">See what's been happening at the <a href="{{ facebook }}" target="_blank">{{ pub }}
+                    <strong>on
+                        Facebook</strong></a>.</p>
+            {% endif %}
+        </div>
+    </div>
+    {% include "partials/trains.html" %}
+    {% include "partials/pagination.html" %}
+</article>
+
+{% include "partials/cta.html" %}
+
+{% endblock %}

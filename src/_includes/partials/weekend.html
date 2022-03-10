@@ -1,0 +1,20 @@
+<article class="[ weekend ] [ panel ] [ bg-light ]">
+    <div class="[ wrapper ] [ flow ]">
+        <h2 class="[ weekend__heading ] [ headline ] [ md:measure-micro ]" data-highlight="secondary">
+            {{ weekend.title }}</h2>
+        <div class="[ weekend__dates ] [ auto-grid-m ]">
+            {% for item in weekend.dates %}
+            <div class="[ weekend__item ] [ frame ] [ leading-flat bg-light-glare ]" data-frame="secondary">
+                <p class="[ weekend__day ] [ text-700 ]">{{ item.day }}</p>
+                <p class="[ weekend__date ] [ text-major font-sans weight-bold ]">
+                    {{ item.date }}<sup class="text-800">{{ item.ordinal }}</sup>
+                </p>
+                <p class="[ weekend__month ] [ text-major font-sans weight-bold ]">{{ item.month }}</p>
+                <p class="[ weekend__text ] [ bg-light-shade ]">
+                    {{ item.summary }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</article>

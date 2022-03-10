@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/home.css'] %}
+
+{% block content %}
+
+<article class="[ wrapper ] intro">
+    <div class="[ intro__header ]">
+        <h1 class="[ intro__heading ] [ weight-normal text-400 md:text-600 ]">
+            {{ intro.eyebrow }}
+            <em class="text-800 md:text-900 lg:text-major">{{ intro.main }}</em>
+        </h1>
+    </div>
+    <div class="[ intro__content ] [ flow ]">
+        <p class="intro__summary">{{ intro.summary }}</p>
+        <a href="{{ intro.buttonUrl }}" class="button">{{ intro.buttonText }}</a>
+    </div>
+    <div class="[ intro__media ]">
+        {% image intro.image, intro.imageAlt, sizes="33.3vw, 50vw 100%" %} </div>
+</article>
+
+{% set ctaContent = primaryCTA %}
+{% include "partials/cta.html" %}
+
+{% include "partials/weekend.html" %}
+{% include "partials/people.html" %}
+
+{% set ctaContent = cta %}
+{% include "partials/cta.html" %}
+
+{% endblock %}

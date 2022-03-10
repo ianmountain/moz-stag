@@ -1,0 +1,30 @@
+.pagination {
+  padding-bottom: get-size('800');
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  // Pushes a sole "next" link out to the right
+  &__inner > [data-direction='forwards'] {
+    margin-inline-start: auto;
+  }
+
+  &__arrow {
+    font-size: get-size('600');
+    display: inline-block;
+    text-decoration: none !important;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  @include media-query('md') {
+    padding-bottom: get-size('major');
+    &__text {
+      display: inline;
+    }
+  }
+}

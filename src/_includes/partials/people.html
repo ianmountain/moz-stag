@@ -1,0 +1,27 @@
+<article class="[ people ] [ panel ] [ bg-tertiary-glare ]">
+    <div class="[ wrapper ] [ flow flow-space-300 ]">
+        <h2 class="[ people__heading ] [ headline ] [ md:measure-micro ]" data-highlight="secondary">
+            {{ people.title }}</h2>
+        <p class="[ people__summary ] [ measure-long ]">
+            {{ people.summary }}
+        </p>
+        <div class="[ people__items ] [ flow-space-700 ]">
+            <ol class="auto-grid-s">
+                {% for item in people.person %}
+                <li class="[ person ] [ duotone ]">
+                    <div class="[ person__image ] [ duotone__image ]">
+                        {% image item.image, item.imageAlt, sizes="25vw, 50vw, 100%" %}
+                    </div>
+                    <div class="[ person__details ] [ bg-dark ]">
+                        <span class="[ person__name ] [ font-sans weight-bold ]">{{ item.name }}</span>
+                        {% if item.nickname %}
+                        <span
+                            class="[ person__nickname ] [ font-sans color-quaternary-glare ]">'{{ item.nickname }}'</span>
+                        {%endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</article>

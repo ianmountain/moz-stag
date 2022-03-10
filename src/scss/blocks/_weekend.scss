@@ -1,0 +1,23 @@
+.weekend {
+  &__item {
+    padding: get-size('400');
+  }
+
+  &__day {
+    text-align: center;
+  }
+
+  &__date {
+    text-align: center;
+    font-size: 10rem;
+  }
+
+  &__month {
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: get-size('500');
+    padding: get-size('500') get-size('400');
+  }
+}
