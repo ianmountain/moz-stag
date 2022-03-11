@@ -15,6 +15,12 @@
     font-size: get-size('600');
     display: inline-block;
     text-decoration: none !important;
+    &.forward::after {
+      content: '\25B6 \FE0E';
+    }
+    &.backward::before {
+      content: '\25C0 \FE0E';
+    }
   }
 
   &__text {

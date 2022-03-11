@@ -3,23 +3,23 @@
         <nav class="pagination__inner" aria-label="Pagination links">
             {% if displayOrder == 1 %}
             <a href="/ale-trail/" data-direction="backwards">
-                <span class="[ pagination__arrow ]">&#9664; </span><span>Overview</span>
+                <span class="[ pagination__arrow backward ]">&nbsp;</span><span>Overview</span>
             </a>
             {% else %}
             <a href="{{ previousStation.url }}" data-direction="backwards">
-                <span class="[ pagination__arrow ]">&#9664; </span><span class="[ pagination__text ]">Previous
+                <span class="[ pagination__arrow backward ]">&nbsp;</span><span class="[ pagination__text ]">Previous
                     stop: </span>{{ previousStation.data.title }}
             </a>
             {% endif %}
             {% if displayOrder < 8 %}
             <a href="{{ nextStation.url }}" data-direction="forwards">
                 <span class="pagination__text">Next stop: </span>{{ nextStation.data.title }}<span
-                    class="[ pagination__arrow ]"> &#9654;</span>
+                    class="[ pagination__arrow forward ]">&nbsp;</span>
             </a>
             {% else %}
             <a href="/manchester/" data-direction="forwards">
-                <span class="pagination__text">Next stop: </span>Manchester<span class="[ pagination__arrow ]">
-                    &#9654;</span>
+                <span class="pagination__text">Next stop: </span>Manchester<span class="[ pagination__arrow forward ]">
+                    &nbsp;</span>
             </a>
             {% endif %}
         </nav>
