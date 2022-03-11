@@ -140,7 +140,7 @@ for (var origin = 0; origin < origins.length; origin++) {
 
 Promise.all(all).then((values) => {
   values.forEach(function (p) {
-    parseJSON(p.currentTarget.responseText);
+    parseJSON(p.target.responseText);
   });
   nextFunction();
 });
