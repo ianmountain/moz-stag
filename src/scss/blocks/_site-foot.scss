@@ -1,4 +1,15 @@
 .site-foot {
   padding: get-size('500') 0 get-size('700') 0;
-  text-align: center;
+  //text-align: center;
+
+  &__image {
+    width: 100%;
+  }
+
+  @include media-query('md') {
+    &__image {
+      width: 75%;
+      justify-self: end;
+    }
+  }
 }

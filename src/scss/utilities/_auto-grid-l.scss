@@ -7,9 +7,19 @@
 */
 .auto-grid-l {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--auto-grid-min-size, 28rem), 1fr)
-  );
   grid-gap: var(--auto-grid-gap, get-size('500'));
+
+  @include media-query('md') {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--auto-grid-min-size, 20rem), 1fr)
+    );
+  }
+
+  @include media-query('lg') {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--auto-grid-min-size, 28rem), 1fr)
+    );
+  }
 }
