@@ -49,7 +49,7 @@ body {
 
 a:not([class]) {
   color: currentColor;
-  text-decoration-color: get-color('primary');
+  text-decoration-color: get-color('tertiary-shade');
   span {
     text-decoration: none;
   }
@@ -132,3 +132,4 @@ img {
 @import 'utilities/table';
 @import 'utilities/duotone-image';
 @import 'utilities/loader';
+@import 'utilities/alert';

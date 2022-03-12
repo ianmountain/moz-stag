@@ -65,7 +65,7 @@ headers.forEach(function (header) {
 function nextFunction() {
   if (arrJSON.length === 0) {
     htmlString = `<p>We cannot find any direct services. Either you've missed the last train (is it a bit late at night..?), or there is a technical problem.</p>`;
-    huxleyContent.className = '[ measure-long ]';
+    huxleyContent.className = '[ alert ] [ measure-long ]';
   } else {
     arrJSON.sort(function (x, y) {
       let a = x.std.toUpperCase(),
