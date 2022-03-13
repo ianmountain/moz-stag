@@ -4,7 +4,7 @@ summary: 'Cellar Bar, the first stop on the Real Ale Trail'
 displayOrder: 1
 pub: 'Cellar Bar'
 about: 'A single-room bar with Sky Sports, ESPN, At the Races, darts, pool and a juke box.'
-directions: 'Exit via the station building. Walk out of the car park and the Cellar Bar is across the road on the right, in the curved building on the corner.'
+directions: 'Exit via the station building. Walk out of the car park and the Cellar Bar is across the road on the right, at the bottom of the curved building on the corner.'
 imageSrc: './src/images/pubs/cellar-bar-batley.png'
 imageAlt: 'The Cellar Bar in Batley'
 imageCredit: 'Google Streetview'

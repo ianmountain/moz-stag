@@ -19,7 +19,7 @@ weekend:
   title: 'The dates for your diary'
 people:
   title: "Who's who"
-  summary: 'Most people attending know each other already, but just in case (and to account for ageing...). Photos courtesy of Moz so any complaints should be directed to him.'
+  summary: 'Most people attending know each other already, but just in case and to account for ageing...'
 ---
 
 This is pretty _rad_, right?

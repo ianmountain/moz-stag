@@ -64,7 +64,7 @@ headers.forEach(function (header) {
 
 function nextFunction() {
   if (arrJSON.length === 0) {
-    htmlString = `<p>We cannot find any direct services. Either you've missed the last train (is it a bit late at night..?), or there is a technical problem.</p>`;
+    htmlString = `<p>We cannot find any trains for you (direct services departing within the next two hours). Please check back later.</p>`;
     huxleyContent.className = '[ alert ] [ measure-long ]';
   } else {
     arrJSON.sort(function (x, y) {
