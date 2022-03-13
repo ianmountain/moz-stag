@@ -6,7 +6,7 @@
   "scripts": {
     "fontface": "glyphhanger --formats='woff2,woff' --subset='./fonts/*.ttf' --css",
     "prefonts": "mkdir -p dist/fonts",
-    "fonts": "glyphhanger ./dist/index.html --spider-limit=0 --formats='woff2,woff' --subset='./fonts/*.ttf' --output='./dist/fonts/'",
+    "fonts": "glyphhanger ./dist/index.html .dist/ale-trail.html --spider-limit=0 --formats='woff2,woff' --subset='./fonts/*.ttf' --output='./dist/fonts/'",
     "clean": "rm -rf dist/*",
     "sass": "mkdir -p src/_includes/css && sass --no-source-map src/scss:src/_includes/css",
     "rollup": "mkdir -p src/_includes/js && npm run js:site && npm run js:trains",
