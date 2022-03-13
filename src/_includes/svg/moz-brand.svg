@@ -5,10 +5,10 @@
    <circle cx="311.89" cy="303.44" r="309.52" fill-opacity=".5" stroke-dashoffset="54.425" stroke-linecap="square" stroke-linejoin="round" stroke-width="4.2095"/>
   </clipPath>
  </defs>
- <g transform="matrix(1.612 0 0 1.612 -10.048 -630.5)" style="shape-inside:url(#rect1113);white-space:pre" aria-label="M">
+ <g transform="matrix(1.612 0 0 1.612 -10.048 -630.5)" style="shape-inside:url(#rect1113);white-space:pre">
   <path d="m6.2331 525.52v-134.4h37.248l53.76 87.744h-19.584l52.224-87.744h37.248l0.384 134.4h-41.28l-0.384-72.192h6.528l-35.712 60.096h-19.968l-37.248-60.096h8.064v72.192z" fill="#250010"/>
  </g>
- <g transform="matrix(1.612 0 0 1.612 275.9 288.52)" style="shape-inside:url(#rect1121);white-space:pre" aria-label="Z">
+ <g transform="matrix(1.612 0 0 1.612 275.9 288.52)" style="shape-inside:url(#rect1121);white-space:pre">
   <path d="m75.876-44.583v-27.84l74.88-87.168 5.568 15.744h-78.528v-35.136h118.46v27.84l-74.88 87.168-5.568-15.744h83.52v35.136z" fill="#250010"/>
  </g>
  <g>

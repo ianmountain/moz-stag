@@ -1,6 +1,12 @@
 <footer class="[ pagination ] [ bg-light font-sans weight-bold ]">
     <div class="wrapper">
         <nav class="pagination__inner" aria-label="Pagination links">
+            {% if destName === 'Batley' %}
+            <a href="{{ nextStation }}" data-direction="forwards">
+                <span class="pagination__text">Start the Ale Trail<span
+                        class="[ pagination__arrow forward ]">&nbsp;</span>
+            </a>
+            {% else %}
             {% if displayOrder == 1 %}
             <a href="/ale-trail/" data-direction="backwards">
                 <span class="[ pagination__arrow backward ]">&nbsp;</span><span>Overview</span>
@@ -21,6 +27,7 @@
                 <span class="pagination__text">Next stop: </span>Manchester<span class="[ pagination__arrow forward ]">
                     &nbsp;</span>
             </a>
+            {% endif %}
             {% endif %}
         </nav>
     </div>

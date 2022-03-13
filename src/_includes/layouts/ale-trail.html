@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %}
 {% set pageCriticalStyles = ['css/ale-trail.css'] %}
 {% set pageScripts = ['js/huxley.js'] %}
+{% set nextStation = '/ale-trail/batley/' %}
 
 {% set pageHeaderTitle = title %}
 {% set pageHeaderSummary = content %}
@@ -10,6 +11,7 @@
     {% include "partials/page-header.html" %}
     {% include "partials/trail-guide.html" %}
     {% include "partials/trains.html" %}
+    {% include "partials/pagination.html" %}
     {% include "partials/commandments.html" %}
 </article>
 
