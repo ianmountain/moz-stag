@@ -57,7 +57,9 @@ module.exports = async function (src, alt, ...args) {
         width="${highsrc.width}"
         height="${highsrc.height}"
         alt="${alt}"
-        loading="lazy"
+        loading="${
+          typeof args[0].loading === 'undefined' ? 'lazy' : args[0].loading
+        }"
         decoding="async">
     </picture>`;
 };

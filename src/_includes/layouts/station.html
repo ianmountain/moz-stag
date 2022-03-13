@@ -10,11 +10,12 @@
         <div class="[ hero__inner ] [ wrapper ]">
             <div class="[ hero__content ] [ flow ] [ color-light flow-space-400 ]">
                 <h1 class="[ headline ] [ measure-compact ]" data-highlight="primary">
-                    {{ title }}</h1>
+                    {{ title }}
+                </h1>
                 <p class="measure-short">{{ summary }}</p>
             </div>
         </div>
-        {% image imageSrc, imageAlt, styles="hero__image", sizes="100%" %}
+        {% image imageSrc, imageAlt, styles="hero__image", sizes="100%", loading="eager" %}
         {% if imageCredit %}
         <div class="[ hero__credit ] [ text-400 ]">
             Image credit: {{ imageCredit }}
