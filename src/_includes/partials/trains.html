@@ -15,13 +15,17 @@
                     to
                     {{ destName }} is displayed here:
                 </p>
-                <div class="[ trains__content ] [ flow flow-space-500 ]">
+                <div class="[ trains__content ] [ flow ]">
                     <div id="huxley" class="{{ thisCrs }} {{ destCrs }}">
                         <div id="huxley__content">
 
                         </div>
                     </div>
                     <button class="button" onclick="window.location.reload();">Refresh train times</button>
+                    <div class="[ nre-logo ] [ measure-micro ]">
+                        {% include "svg/nre-logo.svg" %}
+
+                    </div>
                 </div>
                 {% if (title === 'Manchester') or (destName === 'Manchester') %}
                 <p class="measure-long"><strong>Note:</strong> we only check <strong>direct</strong> trains

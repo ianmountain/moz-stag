@@ -2,6 +2,18 @@
   position: relative;
   padding: 50vh 0 get-size('800') 0;
 
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    background-color: rgba($color: get-color(dark-shade), $alpha: 0.9);
+    display: inline-block;
+    padding: get-size('500');
+    border: 2px solid get-color(light-glare);
+  }
+
   &__image {
     img {
       width: 100%;
@@ -13,15 +25,14 @@
     }
   }
 
-  &__inner {
-    position: relative;
-    z-index: 1;
-  }
-
-  &__content {
-    background-color: rgba($color: get-color(dark-shade), $alpha: 0.9);
-    display: inline-block;
-    padding: get-size('500');
-    border: 2px solid get-color(light-glare);
+  &__credit {
+    @include apply-utility('font', 'sans');
+    @include apply-utility('weight', 'normal');
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(get-color('dark'), 0.85);
+    color: get-color('light');
   }
 }

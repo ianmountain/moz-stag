@@ -7,6 +7,7 @@ about: 'Big on live music (might not be any on the Saturday when we are there) a
 directions: 'Exit via the station building onto Shaw Hall Bank Road. Head downhill (to the right) and the pub is located on the left.'
 imageSrc: './src/images/pubs/railway-inn-greenfield.png'
 imageAlt: 'Picture of the Railway Inn outside Greenfield station'
+imageCredit: 'Google Streetview'
 facebook: 'https://www.facebook.com/RailwayInnGreenfieldOldham'
 thisCrs: 'GNF'
 destCrs: 'SYB'

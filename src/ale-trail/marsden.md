@@ -7,6 +7,7 @@ about: 'The brew-pub was opened in 1995 and purchased by the Ossett Brewery in 2
 directions: 'Leave the station on the downhill side, crossing a canal. The Railway pub is directly opposite the station but we will be carrying on down the hill towards the town. Follow the road round to the left and look for Peel Street (first on the right once you are round the corner). The pub is on the right a short way along Peel Street.'
 imageSrc: './src/images/pubs/riverhead-brewery-tap-marsden.png'
 imageAlt: 'Picture of the Riverhead Brewery Tap in Marsden'
+imageCredit: 'Google Streetview'
 website: 'https://theriverheadmarsden.co.uk/'
 facebook: 'https://www.facebook.com/riverheadbrewerytap'
 thisCrs: 'MSN'

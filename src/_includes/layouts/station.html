@@ -16,6 +16,11 @@
             </div>
         </div>
         {% image imageSrc, imageAlt, styles="hero__image", sizes="100%" %}
+        {% if imageCredit %}
+        <div class="[ hero__credit ] [ text-400 ]">
+            Image credit: {{ imageCredit }}
+        </div>
+        {% endif %}
     </header>
     <div class="[ directions ] [ panel ] [ bg-light-glare ]">
         <div class="wrapper flow">

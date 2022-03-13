@@ -7,6 +7,7 @@ directions: "The King's Head is part of the station complex so might be accessib
 about: 'Located in a restored Victorian station waiting room, with real ales, guest kegs, sandwiches and pies.'
 imageSrc: './src/images/pubs/kings-head-huddersfield.png'
 imageAlt: 'Picture of the Kings Head pub at Huddersfield Station'
+imageCredit: 'Google Streetview'
 facebook: 'https://www.facebook.com/kingshead.huddersfield/'
 thisCrs: 'HUD'
 destCrs: 'SWT'
