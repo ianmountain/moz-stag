@@ -17,6 +17,7 @@
     background-color: get-color(light-glare);
     margin: 2px;
     padding: 5px;
+    border: 2px solid get-color('light-shade');
   }
 
   @include media-query('md') {

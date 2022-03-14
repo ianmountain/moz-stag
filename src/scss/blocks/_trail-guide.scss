@@ -4,7 +4,7 @@
   grid-template-columns: auto 1fr;
 
   &__station-link {
-    font-size: get-size('700');
+    font-size: get-size('600');
     color: get-color('dark-shade');
     text-decoration-color: get-color('primary-shade');
 
@@ -23,6 +23,11 @@
 
   @include media-query('md') {
     grid-template-columns: auto 1fr;
+
+    &__station-link {
+      font-size: get-size('700');
+    }
+
     &__map {
       display: inline;
     }
