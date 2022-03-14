@@ -1,5 +1,6 @@
 ---
 title: 'Greenfield'
+metaDesc: 'Information about the Railway Inn in Greenfield, a pub on the Transpenning Real Ale Trail'
 summary: 'The Railway, seventh stop on the Real Ale Trail'
 displayOrder: 7
 pub: 'The Railway Inn'

@@ -1,5 +1,6 @@
 ---
 title: 'Huddersfield'
+metaDesc: "Information about the King's Head in Huddersfield, a pub on the Transpenning Real Ale Trail"
 summary: "King's Head, the fourth stop on the Real Ale Trail"
 displayOrder: 4
 pub: "King's Head"

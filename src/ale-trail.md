@@ -1,5 +1,6 @@
 ---
 title: 'The Transpennine Real Ale Trail'
+metaDesc: 'An overview of the Transpennine Real Ale Trail'
 layout: 'layouts/ale-trail.html'
 thisCrs: 'MCV'
 destCrs: 'BTL'

@@ -1,5 +1,6 @@
 ---
 title: 'Stalybridge'
+metaDesc: 'Information about the Buffet Bar in Stalybridge, a pub on the Transpenning Real Ale Trail'
 summary: 'The Buffet Bar, eighth stop on the Real Ale Trail'
 displayOrder: 8
 pub: 'Buffet Bar'

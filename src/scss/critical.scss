@@ -1,35 +1,24 @@
-// First up: config and functions
-@import 'config';
-
-// Next: pull in gorko for design tokens
-@import '../../node_modules/gorko/gorko.scss';
-
+//First: get the font files
 @font-face {
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: url(../../fonts/PTSerif-Regular-subset.woff2) format('woff2'),
-    url(../../fonts/PTSerif-Regular-subset.woff) format('woff');
+  src: url(/fonts/PTSerif-Regular-subset.woff2) format('woff2'),
+    url(/fonts/PTSerif-Regular-subset.woff) format('woff');
   font-display: optional;
 }
 @font-face {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
-  src: url(../../fonts/Montserrat-VariableFont_wght-subset.woff2)
-      format('woff2'),
-    url(../../fonts/Montserrat-VariableFont_wght-subset.woff) format('woff');
+  src: url(/fonts/Montserrat-VariableFont_wght-subset.woff2) format('woff2'),
+    url(/fonts/Montserrat-VariableFont_wght-subset.woff) format('woff');
   font-display: optional;
 }
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  src: url(../../fonts/Montserrat-VariableFont_wght-subset.woff2)
-      format('woff2'),
-    url(../../fonts/Montserrat-VariableFont_wght-subset.woff) format('woff');
-  font-display: optional;
-}
+// Next: config and functions
+@import 'config';
+
+// Next: pull in gorko for design tokens
+@import '../../node_modules/gorko/gorko.scss';
 
 @import 'reset';
 

@@ -1,5 +1,6 @@
 ---
 title: 'Marsden'
+metaDesc: 'Information about the Riverhead Brewery Tap in Marsden, a pub on the Transpenning Real Ale Trail'
 summary: 'Riverhead Brewery Tap, the sixth stop on the Real Ale Trail'
 displayOrder: 6
 pub: 'Riverhead Brewery Tap'

@@ -1,5 +1,6 @@
 ---
 title: 'More About Moz'
+metaDesc: 'Memories and photos of Moz provided by his siblings'
 layout: 'layouts/moz.html'
 permalink: '/moz/index.html'
 ---

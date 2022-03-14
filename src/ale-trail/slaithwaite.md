@@ -1,5 +1,6 @@
 ---
 title: 'Slaithwaite'
+metaDesc: 'Information about the Commercial in Slaithwaite, a pub on the Transpenning Real Ale Trail'
 summary: 'The Commercial, fifth stop on the Real Ale Trail'
 displayOrder: 5
 pub: 'Commercial'

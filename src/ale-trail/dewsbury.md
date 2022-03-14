@@ -1,5 +1,6 @@
 ---
 title: 'Dewsbury'
+metaDesc: 'Information about the West Riding Refreshment Rooms in Dewsbury, a pub on the Transpenning Real Ale Trail'
 summary: 'The West Riding Refreshment Rooms, second stop on the Real Ale Trail'
 displayOrder: 2
 pub: 'West Riding Refreshment Rooms'

@@ -1,5 +1,6 @@
 ---
 title: 'Batley'
+metaDesc: 'Information about the Cellar Bar in Batley, a pub on the Transpenning Real Ale Trail'
 summary: 'Cellar Bar, the first stop on the Real Ale Trail'
 displayOrder: 1
 pub: 'Cellar Bar'

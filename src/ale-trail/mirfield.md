@@ -1,5 +1,6 @@
 ---
 title: 'Mirfield'
+metaDesc: 'Information about the Navigation Tavern in Mirfield, a pub on the Transpenning Real Ale Trail'
 summary: 'The Navigation Tavern, third stop on the Real Ale Trail'
 displayOrder: 3
 pub: 'The Navigation Tavern'
