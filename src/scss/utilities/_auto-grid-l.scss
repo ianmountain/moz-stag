@@ -7,7 +7,7 @@
 */
 .auto-grid-l {
   display: grid;
-  grid-gap: var(--auto-grid-gap, get-size('500'));
+  grid-gap: var(--auto-grid-gap, get-size('major'));
 
   @include media-query('md') {
     grid-template-columns: repeat(

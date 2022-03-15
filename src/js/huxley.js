@@ -65,7 +65,7 @@ headers.forEach(function (header) {
 function nextFunction() {
   if (arrJSON.length === 0) {
     htmlString = `<p>We cannot find any direct services departing within the next two hours. Please check back later.</p>`;
-    huxleyContent.className = '[ alert ] [ measure-long ]';
+    huxleyContent.className = '[ alert__error ] [ measure-long ]';
   } else {
     arrJSON.sort(function (x, y) {
       let a = x.std.toUpperCase(),
