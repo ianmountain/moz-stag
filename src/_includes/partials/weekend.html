@@ -1,8 +1,7 @@
 <article class="[ weekend ] [ panel ] [ bg-light ]">
     <div class="[ wrapper ] [ flow ]">
         <h2 class="[ weekend__heading ] [ headline ]" data-highlight="secondary">
-            {{ weekend.title }}
-        </h2>
+            {{ weekend.title }}</h2>
         <div class="[ weekend__dates ] [ auto-grid-m ]">
             {% for item in weekend.dates %}
             <div class="[ weekend__item ] [ frame ] [ leading-flat bg-light-glare ]" data-frame="secondary">
@@ -11,11 +10,12 @@
                     {{ item.date }}<sup class="text-800">{{ item.ordinal }}</sup>
                 </p>
                 <p class="[ weekend__month ] [ text-major font-sans weight-bold ]">{{ item.month }}</p>
-                <p class="[ weekend__text ] [ bg-tertiary-glare ]">
+                <p class="[ weekend__text ] [ bg-light-shade ]">
                     {{ item.summary }}
                 </p>
             </div>
             {% endfor %}
         </div>
+        <a href="/manchester/" class="[ button ]">Don't get lost in Manchester</a>
     </div>
 </article>

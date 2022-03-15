@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/manchester.css'] %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+<article>
+    {% include "partials/page-header.html" %}
+    {% include "partials/essentials.html" %}
+</article>
+
+{% include "partials/cta.html" %}
+{% endblock %}

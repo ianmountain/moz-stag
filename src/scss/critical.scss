@@ -1,6 +1,3 @@
-// First: config and functions
-@import 'config';
-
 //Next: get the font files
 @font-face {
   font-family: 'PT Serif';
@@ -17,6 +14,9 @@
     url(/fonts/Montserrat-VariableFont_wght-subset.woff) format('woff');
   font-display: optional;
 }
+
+// First: config and functions
+@import 'config';
 
 // Next: pull in gorko for design tokens
 @import '../../node_modules/gorko/gorko.scss';

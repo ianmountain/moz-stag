@@ -1,0 +1,23 @@
+<div class="[ panel ]">
+    <div class="[ wrapper ] [ flow ]">
+        <h2 class="[ headline ] [ measure-compact ]" data-highlight="secondary">Find your way around</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1ofqukegridg7XQcRhc5l3WJGbfgII3Hi&ehbc=2E312F" width="100%"
+            height="480"></iframe>
+        <h3>Useful addresses</h3>
+        <div class="[ auto-grid-m ]">
+            {% for item in places.place %}
+            <div class="[ place ] [ frame ] [ flow flow-space-300   bg-light-glare ]" data-frame="secondary">
+                <p class="[ place__name ]">{{ item.name }}</p>
+                <div class="[ place__address ]">
+                    <p>{{ item.address }}</p>
+                    <p>{{ item.city }}</p>
+                    <p>{{ item.postcode }}</p>
+                </div>
+                <div class="place__email">
+                    <a href="{{ item.website }}" target="_blank">{{ item.name }} website</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

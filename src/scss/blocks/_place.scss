@@ -1,0 +1,8 @@
+.place {
+  padding: get-size('500');
+
+  &__name {
+    @include apply-utility('font', 'sans');
+    @include apply-utility('weight', 'bold');
+  }
+}

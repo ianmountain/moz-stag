@@ -1,0 +1,18 @@
+{
+  "place": [
+    {
+      "name": "Staycity Apartments",
+      "address": "20 Cable Street",
+      "city": "Manchester",
+      "postcode": "M4 5EG",
+      "website": "https://www.staycity.com/manchester/northern-quarter/"
+    },
+    {
+      "name": "Peaky Blinders",
+      "address": "23 Peter Street",
+      "city": "Manchester",
+      "postcode": "M2 5QR",
+      "website": "https://www.peakyblindersmanchester.com/"
+    }
+  ]
+}
