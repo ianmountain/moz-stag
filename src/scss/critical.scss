@@ -5,14 +5,15 @@
   font-weight: 400;
   src: url(/fonts/PTSerif-Regular-subset.woff2) format('woff2'),
     url(/fonts/PTSerif-Regular-subset.woff) format('woff');
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
+  font-weight: 400 800;
   src: url(/fonts/Montserrat-VariableFont_wght-subset.woff2) format('woff2'),
     url(/fonts/Montserrat-VariableFont_wght-subset.woff) format('woff');
-  font-display: optional;
+  font-display: swap;
 }
 
 // First: config and functions

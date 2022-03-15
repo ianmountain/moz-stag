@@ -29,13 +29,11 @@
       top: -0.25rem;
       left: -0.25rem;
       background-color: rgba(get-color('light-shade'), 0.8);
-      // border: 0.125rem solid get-color('dark');
       z-index: -1;
 
       @include media-query('md') {
         top: -0.75rem;
         left: -0.75rem;
-        // border-width: 0.25rem;
       }
     }
   }
@@ -45,7 +43,6 @@
     em {
       font-style: normal;
       display: block;
-      font-weight: 900;
 
       // The weight change creates a weird indent, so this
       // optical adjustment fixes it
