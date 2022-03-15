@@ -16,7 +16,7 @@ primaryCTA:
   buttonText: 'Take me to the ale'
   buttonUrl: '/ale-trail/'
 weekend:
-  title: 'Dates for your diary'
+  title: 'Dates and places'
 people:
   title: "Who's who"
   summary: 'Most people attending know each other already, but just in case and to account for ageing...'

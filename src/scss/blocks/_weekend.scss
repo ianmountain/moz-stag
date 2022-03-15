@@ -1,15 +1,21 @@
 .weekend {
-  &__item {
+  &__calendar {
     padding: get-size('400');
+    margin: get-size('400');
+    background-color: rgba(get-color('tertiary-glare'), 0.5);
+  }
+
+  &__info {
+    margin: get-size('400');
   }
 
   &__day {
     text-align: center;
   }
 
-  &__date {
+  &__number {
     text-align: center;
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   &__month {
@@ -17,7 +23,51 @@
   }
 
   &__text {
-    margin-top: get-size('500');
-    padding: get-size('500') get-size('400');
+    //padding: get-size('500') get-size('400');
+  }
+
+  @include media-query('md') {
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: get-size('700') get-size('500');
+
+      @supports (display: grid) {
+        > * {
+          margin: 0;
+        }
+      }
+    }
+
+    &__date {
+      &:nth-child(odd) {
+        grid-column: 1/7;
+      }
+
+      &:nth-child(even) {
+        grid-column: 13/7;
+      }
+    }
+
+    &__places {
+      grid-column: 13/7;
+      align-self: center;
+    }
+  }
+
+  @include media-query('lg') {
+    &__date {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      //grid-gap: get-size('300');
+    }
+
+    &__info {
+      align-self: center;
+    }
+
+    &__day {
+      text-align: left;
+    }
   }
 }

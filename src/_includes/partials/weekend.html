@@ -1,21 +1,31 @@
 <article class="[ weekend ] [ panel ] [ bg-light ]">
     <div class="[ wrapper ] [ flow ]">
         <h2 class="[ weekend__heading ] [ headline ]" data-highlight="secondary">
-            {{ weekend.title }}</h2>
-        <div class="[ weekend__dates ] [ auto-grid-m ]">
+            {{ weekend.title }}
+        </h2>
+        <div class="[ weekend__inner ] [ flow ]">
             {% for item in weekend.dates %}
-            <div class="[ weekend__item ] [ frame ] [ leading-flat bg-light-glare ]" data-frame="secondary">
-                <p class="[ weekend__day ] [ text-700 ]">{{ item.day }}</p>
-                <p class="[ weekend__date ] [ text-major font-sans weight-bold ]">
-                    {{ item.date }}<sup class="text-800">{{ item.ordinal }}</sup>
-                </p>
-                <p class="[ weekend__month ] [ text-major font-sans weight-bold ]">{{ item.month }}</p>
-                <p class="[ weekend__text ] [ bg-light-shade ]">
-                    {{ item.summary }}
-                </p>
+            <div class="[ weekend__date ] [ frame flow ] [ bg-light-glare ]" data-frame="secondary">
+                <div class="[ weekend__calendar ] [ leading-flat ]">
+                    <p class="[ weekend__number ] [ font-sans weight-heavy ]">
+                        {{ item.date }}<sup class="text-700">{{ item.ordinal }}</sup>
+                    </p>
+                    <p class="[ weekend__month ] [ text-800 font-sans weight-bold ]">{{ item.month }}</p>
+                </div>
+                <div class="[ weekend__info ]">
+                    <p class="[ weekend__day ] [ text-700 ]">{{ item.day }}</p>
+                    <p class="[ weekend__text ]">
+                        {{ item.summary }}
+                    </p>
+                </div>
             </div>
             {% endfor %}
+            <div class="[ weekend__places ] [ flow ]">
+                <h3 class="[ headline ]" data-highlight="primary">Don't get lost</h3>
+                <p>All the important places marked on a map to get you from A to B to C...</p>
+                <a href="/manchester/" class="[ button ]">Find your way around</a>
+            </div>
+
         </div>
-        <a href="/manchester/" class="[ button ]">Don't get lost in Manchester</a>
     </div>
 </article>
