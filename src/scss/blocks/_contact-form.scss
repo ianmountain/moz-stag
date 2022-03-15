@@ -1,0 +1,23 @@
+.contact-form {
+  * {
+    //display: block;
+    width: 100%;
+  }
+
+  label {
+    @include apply-utility('font', 'sans');
+    @include apply-utility('weight', 'bold');
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem 0.75rem;
+    margin: get-size('300') 0;
+    border: 2px solid get-color('tertiary-glare');
+    border-radius: 0;
+  }
+
+  textarea {
+    height: 150px;
+  }
+}

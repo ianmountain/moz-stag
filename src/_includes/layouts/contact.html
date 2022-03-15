@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/contact.css'] %}
+{% set pageScripts = ['js/contact.js'] %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+<article>
+    {% include "partials/page-header.html" %}
+    {% include "partials/contact-form.html" %}
+</article>
+
+{% endblock %}
