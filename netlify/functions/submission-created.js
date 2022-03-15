@@ -13,7 +13,7 @@ exports.handler = async (event) => {
     const name = data.payload.data.name;
     const email = data.payload.data.email;
     const message = data.payload.data.message;
-    const newRow = [name, email, message];
+    const newRow = [name, email, message, 'new'];
     await sheet.addRow(newRow);
     const response = {
       statusCode: 200,
