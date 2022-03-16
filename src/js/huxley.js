@@ -50,13 +50,13 @@ switch (dest) {
 
 if (origins.length > 1) {
   huxleyContent.className = '[ table col4 ] [ measure-short ]';
-  headers.push('From', 'Sched.', 'Exp.', 'Platform');
+  headers.push('From', 'Time', 'Exp.', 'Plat.');
 } else if (destinations.length > 1) {
   huxleyContent.className = '[ table col4 ] [ measure-short ]';
-  headers.push('Sched.', 'Exp.', 'Platform', 'To');
+  headers.push('Time', 'Exp.', 'Plat.', 'To');
 } else {
   huxleyContent.className = '[ table col3 ] [ measure-short ]';
-  headers.push('Sched.', 'Exp.', 'Platform');
+  headers.push('Time', 'Exp.', 'Plat.');
 }
 headers.forEach(function (header) {
   htmlString += `<div class="[ table__header ]">${header}</div>`;
