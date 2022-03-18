@@ -8,7 +8,7 @@
     "prefonts": "mkdir -p dist/fonts",
     "fonts": "npm run fonts:serif && npm run fonts:sans",
     "fonts:serif": "glyphhanger --whitelist=U+30-39 ./dist/index.html .dist/ale-trail.html --spider --formats='woff2,woff' --subset='./fonts/PTSerif*.ttf' --family='PT Serif,serif' --output='./dist/fonts/'",
-    "fonts:sans": "glyphhanger --whitelist=U+30-39 ./dist/index.html .dist/ale-trail.html --spider --formats='woff2,woff' --subset='./fonts/Montserrat*.ttf' --family='Montserrat' --output='./dist/fonts/'",
+    "fonts:sans": "glyphhanger --whitelist=U+30-39,U+47,U+56 ./dist/index.html .dist/ale-trail.html --spider --formats='woff2,woff' --subset='./fonts/Montserrat*.ttf' --family='Montserrat' --output='./dist/fonts/'",
     "clean": "rm -rf dist/*",
     "sass": "mkdir -p src/_includes/css && sass --no-source-map src/scss:src/_includes/css",
     "rollup": "mkdir -p src/_includes/js && npm run js:site && npm run js:trains && npm run js:contact",

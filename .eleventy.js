@@ -9,6 +9,11 @@ const htmlMinTransform = require('./src/11ty/transforms/html-min-transforms.js')
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = (config) => {
+  // Only minify HTML if we are in production because it slows builds _right_ down
+  if (isProduction) {
+    config.addTransform('htmlmin', htmlMinTransform);
+  }
+
   // Add shortcode for creating html <picture> elements
   config.addNunjucksAsyncShortcode('image', eleventyImage);
   config.addLiquidShortcode('image', eleventyImage);
@@ -29,10 +34,8 @@ module.exports = (config) => {
     }
   });
 
-  // Only minify HTML if we are in production because it slows builds _right_ down
-  if (isProduction) {
-    config.addTransform('htmlmin', htmlMinTransform);
-  }
+  // Set directories to pass through to the dist folder
+  config.addPassthroughCopy('./src/images/meta');
 
   // Returns aleTrail, sorted by display order
   config.addCollection('aleTrail', (collection) => {

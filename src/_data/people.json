@@ -32,6 +32,7 @@
     },
     {
       "name": "Jamie",
+      "nickname": "ask him",
       "image": "./src/images/people/jamie.png",
       "imageAlt": "A picture of Jamie"
     },
@@ -50,6 +51,7 @@
     },
     {
       "name": "Mark",
+      "nickname": "Curly",
       "image": "./src/images/people/mark.png",
       "imageAlt": "A picture of Mark"
     },
@@ -64,6 +66,12 @@
       "nickname": "Moz",
       "image": "./src/images/people/moz.png",
       "imageAlt": "A picture of Moz"
+    },
+    {
+      "name": "Paul",
+      "nickname": "Tiff",
+      "image": "./src/images/people/tiff.png",
+      "imageAlt": "A picture of Tiff"
     },
     {
       "name": "Richard",
@@ -85,6 +93,7 @@
     },
     {
       "name": "Simon",
+      "nickname": "Si",
       "image": "./src/images/people/simon.png",
       "imageAlt": "A picture of Simon"
     },
@@ -93,11 +102,6 @@
       "nickname": "Bense",
       "image": "./src/images/people/stephen.png",
       "imageAlt": "A picture of Stephen"
-    },
-    {
-      "nickname": "Tiff",
-      "image": "./src/images/people/tiff.png",
-      "imageAlt": "A picture of Tiff"
     }
   ]
 }
