@@ -1,6 +1,6 @@
 ---
 title: "Moz's Stag Weekend"
-metaDesc: "Information for the lucky souls attending Moz's stag weekend in April 2022"
+metaDesc: "Essential information for the lucky souls attending Moz's stag weekend"
 layout: 'layouts/home.html'
 intro:
   eyebrow: 'All you need to know about'
