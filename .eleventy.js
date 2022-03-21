@@ -1,5 +1,5 @@
 const sortByDisplayOrder = require('./src/11ty/utils/sort-by-display-order.js');
-const eleventyImage = require('./src/11ty/shortcodes/image-shortcode-copy.js');
+const eleventyImage = require('./src/11ty/shortcodes/image-shortcode.js');
 const CleanCSS = require('clean-css');
 const { minify } = require('terser');
 // Transforms
