@@ -1,5 +1,5 @@
 const sortByDisplayOrder = require('./src/11ty/utils/sort-by-display-order.js');
-const eleventyImage = require('./src/11ty/shortcodes/image-shortcode.js');
+const eleventyImage = require('./src/11ty/shortcodes/image-shortcode-copy.js');
 const CleanCSS = require('clean-css');
 const { minify } = require('terser');
 // Transforms
@@ -35,7 +35,7 @@ module.exports = (config) => {
   });
 
   // Set directories to pass through to the dist folder
-  config.addPassthroughCopy('./src/images/meta');
+  config.addPassthroughCopy('src/images/meta');
 
   // Returns aleTrail, sorted by display order
   config.addCollection('aleTrail', (collection) => {

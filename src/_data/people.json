@@ -3,104 +3,104 @@
     {
       "name": "Alasdair",
       "nickname": "Al",
-      "image": "./src/images/people/alasdair.png",
+      "image": "/images/people/alasdair.png",
       "imageAlt": "A picture of Alasdair"
     },
     {
       "name": "Andrew",
       "nickname": "Bell",
-      "image": "./src/images/people/andrew-b.png",
+      "image": "/images/people/andrew-b.png",
       "imageAlt": "A picture of Andrew"
     },
     {
       "name": "Andrew",
       "nickname": "Stevens",
-      "image": "./src/images/people/andrew-s.png",
+      "image": "/images/people/andrew-s.png",
       "imageAlt": "A picture of Andrew"
     },
     {
       "name": "Colin",
       "nickname": "Sess",
-      "image": "./src/images/people/sess.png",
+      "image": "/images/people/sess.png",
       "imageAlt": "A picture of Colin"
     },
     {
       "name": "Ian",
       "nickname": "Mountsy",
-      "image": "./src/images/people/ian.png",
+      "image": "/images/people/ian.png",
       "imageAlt": "A picture of Ian"
     },
     {
       "name": "Jamie",
       "nickname": "ask him",
-      "image": "./src/images/people/jamie.png",
+      "image": "/images/people/jamie.png",
       "imageAlt": "A picture of Jamie"
     },
     {
       "name": "Jonny",
       "nickname": "Woody",
-      "image": "./src/images/people/woody.png",
+      "image": "/images/people/woody.png",
       "imageAlt": "A picture of Jonny"
     },
 
     {
       "name": "Kevin",
       "nickname": "Kev",
-      "image": "./src/images/people/kevin.png",
+      "image": "/images/people/kevin.png",
       "imageAlt": "A picture of Kevin"
     },
     {
       "name": "Mark",
       "nickname": "Curly",
-      "image": "./src/images/people/mark.png",
+      "image": "/images/people/mark.png",
       "imageAlt": "A picture of Mark"
     },
     {
       "name": "Martin",
       "nickname": "Boz",
-      "image": "./src/images/people/martin.png",
+      "image": "/images/people/martin.png",
       "imageAlt": "A picture of Martin"
     },
     {
       "name": "Paul",
       "nickname": "Moz",
-      "image": "./src/images/people/moz.png",
+      "image": "/images/people/moz.png",
       "imageAlt": "A picture of Moz"
     },
     {
       "name": "Paul",
       "nickname": "Tiff",
-      "image": "./src/images/people/tiff.png",
+      "image": "/images/people/tiff.png",
       "imageAlt": "A picture of Tiff"
     },
     {
       "name": "Richard",
       "nickname": "Tommy",
-      "image": "./src/images/people/richard-p.png",
+      "image": "/images/people/richard-p.png",
       "imageAlt": "A picture of Richard"
     },
     {
       "name": "Richard",
       "nickname": "Bense",
-      "image": "./src/images/people/richard-b.png",
+      "image": "/images/people/richard-b.png",
       "imageAlt": "A picture of Richard"
     },
     {
       "name": "Scott",
       "nickname": "Chut",
-      "image": "./src/images/people/scott.png",
+      "image": "/images/people/scott.png",
       "imageAlt": "A picture of Scott"
     },
     {
       "name": "Simon",
       "nickname": "Si",
-      "image": "./src/images/people/simon.png",
+      "image": "/images/people/simon.png",
       "imageAlt": "A picture of Simon"
     },
     {
       "name": "Stephen",
       "nickname": "Bense",
-      "image": "./src/images/people/stephen.png",
+      "image": "/images/people/stephen.png",
       "imageAlt": "A picture of Stephen"
     }
   ]

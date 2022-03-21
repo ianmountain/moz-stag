@@ -3,4 +3,9 @@ permalink: '/robots.txt'
 eleventyExcludeFromCollections: true
 ---
 
-User-agent: * Allow: / Sitemap: {{ site.url }}/sitemap.xml
+User-agent: *
+Disallow: /images/moz/
+Disallow: /images/people/
+Disallow: /images/bg/
+
+Sitemap: {{ site.url }}/sitemap.xml

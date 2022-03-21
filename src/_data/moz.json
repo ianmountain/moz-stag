@@ -3,17 +3,17 @@
     {
       "gallery": [
         {
-          "image": "./src/images/moz/moz-1.png",
+          "image": "/images/moz/moz-1.png",
           "caption": "Mini Moz and Mini Kev Moz",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-2.png",
+          "image": "/images/moz/moz-2.png",
           "caption": "Three siblings",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-3.png",
+          "image": "/images/moz/moz-3.png",
           "caption": "Getting the band together",
           "imageAlt": "A picture of Paul"
         }
@@ -30,17 +30,17 @@
     {
       "gallery": [
         {
-          "image": "./src/images/moz/moz-4.png",
+          "image": "/images/moz/moz-4.png",
           "caption": "Aye aye captain!",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-5.png",
+          "image": "/images/moz/moz-5.png",
           "caption": "Photo shoot",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-6.png",
+          "image": "/images/moz/moz-6.png",
           "caption": "Liiiverpool, Liiiverpool...",
           "imageAlt": "A picture of Paul"
         }
@@ -57,17 +57,17 @@
     {
       "gallery": [
         {
-          "image": "./src/images/moz/moz-7.png",
+          "image": "/images/moz/moz-7.png",
           "caption": "Winter on Springfields",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-8.png",
+          "image": "/images/moz/moz-8.png",
           "caption": "Big hair Moz",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-9.png",
+          "image": "/images/moz/moz-9.png",
           "caption": "Theatre club",
           "imageAlt": "A picture of Paul"
         }
@@ -87,17 +87,17 @@
     {
       "gallery": [
         {
-          "image": "./src/images/moz/moz-10.png",
+          "image": "/images/moz/moz-10.png",
           "caption": "At big school",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-11.png",
+          "image": "/images/moz/moz-11.png",
           "caption": "Casual",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-12.png",
+          "image": "/images/moz/moz-12.png",
           "caption": "A pint at the Club",
           "imageAlt": "A picture of Paul"
         }
@@ -123,17 +123,17 @@
     {
       "gallery": [
         {
-          "image": "./src/images/moz/moz-13.png",
+          "image": "/images/moz/moz-13.png",
           "caption": "Dopey (on the right)",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-14.png",
+          "image": "/images/moz/moz-14.png",
           "caption": "The family",
           "imageAlt": "A picture of Paul"
         },
         {
-          "image": "./src/images/moz/moz-15.png",
+          "image": "/images/moz/moz-15.png",
           "caption": "The A-Team",
           "imageAlt": "A picture of Paul"
         }

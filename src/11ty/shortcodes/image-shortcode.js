@@ -1,13 +1,14 @@
 const Image = require('@11ty/eleventy-img');
+const path = require('path');
 
 const ImageWidths = {
   ORIGINAL: null,
 };
 
-module.exports = async function (src, alt, ...args) {
+module.exports = async function (relativeSrc, alt, ...args) {
   if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
-    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${relativeSrc}`);
   }
 
   // if image.widths aren't specified, use default values
@@ -22,20 +23,28 @@ module.exports = async function (src, alt, ...args) {
       ? ['avif', 'webp']
       : args[0].optimizedFormats;
   // if image.sizes aren't specified, use default value
+  // 37em is the md breakpoint in _config.scss
   let sizes =
     typeof args[0].sizes === 'undefined'
       ? '(min-width: 37em) 50vw, 100vw'
       : args[0].sizes;
 
-  let metadata = await Image(src, {
+  const { name: imgName, dir: imgDir } = path.parse(relativeSrc);
+  const fullSrc = path.join('src', relativeSrc);
+
+  let metadata = await Image(fullSrc, {
     widths: [ImageWidths.ORIGINAL, ...widths],
     formats: [...optimizedFormats, baseFormat],
-    urlPath: '/images/',
-    outputDir: './dist/images/',
+    outputDir: path.join('dist', imgDir),
+    urlPath: imgDir,
+    // custom file name
+    filenameFormat: (hash, _src, width, format) => {
+      return `${imgName}-${hash}-${width}.${format}`;
+    },
   });
 
-  let lowsrc = metadata.png[0];
-  let highsrc = metadata.png[metadata.png.length - 1];
+  let lowSrc = metadata.png[0];
+  let highSrc = metadata.png[metadata.png.length - 1];
 
   return `<picture${
     // if image.styles are defined, include them in the html
@@ -53,9 +62,9 @@ module.exports = async function (src, alt, ...args) {
       })
       .join('\n')}
       <img
-        src="${lowsrc.url}"
-        width="${highsrc.width}"
-        height="${highsrc.height}"
+        src="${lowSrc.url}"
+        width="${highSrc.width}"
+        height="${highSrc.height}"
         alt="${alt}"
         loading="${
           typeof args[0].loading === 'undefined' ? 'lazy' : args[0].loading

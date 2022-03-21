@@ -10,6 +10,8 @@
 
 {% if not socialImage %}
 {% set socialImage = site.url + '/images/meta/social-share.png' %}
+{% else %}
+{% set socialImage = site.url + socialImage %}
 {% endif %}
 
 {# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch 
@@ -28,6 +30,7 @@
 
 <meta property="og:site_name" content="{{ siteTitle }}" />
 <meta property="og:title" content="{{ pageTitle }}" />
+<meta name="twitter:title" content="{{ pageTitle }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ currentUrl }}" />
 

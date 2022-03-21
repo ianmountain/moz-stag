@@ -1,6 +1,7 @@
 ---
 title: 'The Transpennine Real Ale Trail'
-metaDesc: 'An overview of the Transpennine Real Ale Trail'
+metaDesc: 'The Transpennine Real Ale Trail: eight pubs, one great day out'
+socialImage: '/images/meta/ale-trail.png'
 layout: 'layouts/ale-trail.html'
 thisCrs: 'MCV'
 destCrs: 'BTL'

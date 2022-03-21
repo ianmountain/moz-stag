@@ -8,7 +8,7 @@ intro:
   summary: 'A social trip away to Manchester with a day out on the Transpennine Real Ale Trail'
   buttonText: 'Who is Moz?'
   buttonUrl: '/moz/'
-  image: './src/images/bg/moz.png'
+  image: '/images/bg/moz.png'
   imageAlt: 'A picture of Moz'
 primaryCTA:
   title: 'The Transpennine Real Ale Trail'
