@@ -1,7 +1,8 @@
 <article class="[ people ] [ panel ] [ bg-light-shade ]">
     <div class="[ wrapper ] [ flow flow-space-300 ]">
         <h2 class="[ people__heading ] [ headline ]" data-highlight="secondary">
-            {{ people.title }}</h2>
+            {{ people.title }}
+        </h2>
         <p class="[ people__summary ] [ measure-long ]">
             {{ people.summary }}
         </p>
@@ -10,7 +11,7 @@
                 {% for item in people.person %}
                 <li class="[ person ] [ duotone ]">
                     <div class="[ person__image ] [ duotone__image ]">
-                        {% image item.image, item.imageAlt, sizes="25vw, 50vw, 100%" %}
+                        {% image item.image, item.imageAlt, sizes="(min-width: 62em) 25vw, (min-width: 37em) 50vw, 100vw" %}
                     </div>
                     <div class="[ person__details ] [ bg-dark ]">
                         {% if item.name %}

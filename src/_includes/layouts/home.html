@@ -16,7 +16,8 @@
             <a href="{{ intro.buttonUrl }}" class="button">{{ intro.buttonText }}</a>
         </div>
         <div class="[ intro__media ]">
-            {% image intro.image, intro.imageAlt, sizes="33.3vw, 50vw 100%", loading="eager" %} </div>
+            {% image intro.image, intro.imageAlt, sizes="(min-width: 62em) 75vw, (min-width: 37em) 60vw, 100vw", loading="eager" %}
+        </div>
     </article>
 </div>
 

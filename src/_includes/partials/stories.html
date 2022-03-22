@@ -7,7 +7,7 @@
             <div class="[ stories__gallery ] [ auto-grid-m ]">
                 {% for item in item.gallery %}
                 <figure class="[ stories__gallery-image ]">
-                    {% image item.image, item.imageAlt, sizes="33vw, 50vw, 100%" %}
+                    {% image item.image, item.imageAlt, sizes="(min-width: 62em) 33vw, (min-width: 62em) 50vw, 100vw" %}
                     <figcaption
                         class="[ stories__gallery-caption ] [ font-sans weight-bold ] [ bg-dark color-light-glare ]">
                         {{ item.caption }}
