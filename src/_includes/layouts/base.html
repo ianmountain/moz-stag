@@ -41,6 +41,11 @@
     </head>
 
     <body>
+        <style>
+            burger-menu {
+                display: none;
+            }
+            </style>
         <div class="site-wrap">
             {% include "partials/site-head.html" %}
             <main tabindex="-1" id="main-content">
@@ -51,19 +56,14 @@
 
             <!-- don't format -->
         <!-- capture the JS content as a Nunjucks variable -->
-        {% set js %}
-          {% include "js/app.js" %}
-        {% endset %}
-        <!-- feed it through our jsmin filter to minify -->
-        <script>
-          {{ js | jsmin | safe }}
-        </script>
         {# Add facility for pages to declare an array of script paths #}
         {% if pageScripts %}
             {% for item in pageScripts %}
+                <!-- capture the JS content as a Nunjucks variable -->
                 {% set js %}
                     {% include item %}
                 {% endset %}
+                <!-- feed it through our jsmin filter to minify -->
                 <script>
                     {{ js | jsmin | safe }}
                 </script>
@@ -71,6 +71,12 @@
         {% endif %}
         <!-- don't format -->
         </div>
+        <style>
+            burger-menu {
+                display: block;
+            }
+            </style>
     </body>
+
 
 </html>
